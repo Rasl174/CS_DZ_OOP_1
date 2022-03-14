@@ -18,20 +18,20 @@ namespace CS_DZ_OOP_1
 
     class Player
     {
-        public string Name;
-        public int Health;
-        public int Damage;
+        private string _name;
+        private int _health;
+        private int _damage;
 
         public Player(string name, int health, int damage)
         {
-            Name = name;
-            Health = health;
-            Damage = damage;
+            _name = name;
+            _health = health;
+            _damage = damage;
         }
 
         public void ShowInfo()
         {
-            Console.WriteLine("Имя игрока - " + Name + "\nЕго жизни - " + Health + "\nЕго урон - " + Damage);
+            Console.WriteLine("Имя игрока - " + _name + "\nЕго жизни - " + _health + "\nЕго урон - " + _damage);
         }
     }
 }
